@@ -51,7 +51,7 @@
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#github-repositories">GitHub Repositories</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -67,17 +67,21 @@
 
       <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
         <h2 style="font-size: 4rem; font-weight: bold; color: white;">Hi, I'm Karen!</h2>
-        <p style="font-size: 2rem; color: white;">I'm an economist and live in Lima, Peru.</p>
+        <p style="font-size: 2rem; color: white;">I'm an economist and live in Lima, Peru.<br></p>
         <a href="#about" class="btn-scroll" title="Scroll Down"><i class="bi bi-chevron-down"></i></a>
       </div>
 
     </section><!-- /Hero Section -->
-    
-    <!-- Section Title -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>About</h2>
       <p>.-</p>
-    </div><!-- End Section Title -->
+    </div>
+      <!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -379,64 +383,75 @@
 
     </section><!-- /Services Section -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
+<!-- GitHub Repositories Section -->
+<section id="github-repositories" class="portfolio section light-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>GitHub Repositories</h2>
+    <p>A collection of my work and projects</p>
+  </div><!-- End Section Title -->
 
-      <div class="container">
+  <div class="container">
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-r">R Classes</li>
+        <li data-filter=".filter-machine-learning">Machine Learning</li>
+        <li data-filter=".filter-python">Python Classes</li>
+      </ul><!-- End Portfolio Filters -->
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+        <!-- All Repositories Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-r filter-machine-learning filter-python">
+          <img src="assets/img/Total.jpg" class="img-fluid" alt="All Repositories">
+          <div class="portfolio-info">
+            <h4>All Repositories</h4>
+            <p>Overview of all repositories</p>
+            <a href="https://github.com/KarenSalazarSand" title="All Repositories" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End All Repositories Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+        <!-- R Classes Repository -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-r">
+          <img src="assets/img/ImagenClaseR.jpg" class="img-fluid" alt="R Classes">
+          <div class="portfolio-info">
+            <h4>R Classes</h4>
+            <p>Repository for R programming classes</p>
+            <a href="https://github.com/KarenSalazarSand/R-classes.git" title="R Classes" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End R Classes Repository -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+        <!-- Machine Learning Repository -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-machine-learning">
+          <img src="assets/img/ImagenMachineLearning.jpg" class="img-fluid" alt="Machine Learning Classes">
+          <div class="portfolio-info">
+            <h4>Machine Learning Classes</h4>
+            <p>Repository for Machine Learning classes</p>
+            <a href="https://github.com/KarenSalazarSand/Machine_Learning_Classes.git" title="Machine Learning Classes" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Machine Learning Repository -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-          </div><!-- End Portfolio Container -->
+        <!-- Python Classes Repository -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-python">
+          <img src="assets/img/ImagenClasePython.jpg" class="img-fluid" alt="Python Classes">
+          <div class="portfolio-info">
+            <h4>Python Classes</h4>
+            <p>Repository for Python programming classes</p>
+            <a href="https://github.com/KarenSalazarSand/Python_Classes.git" title="Python Classes" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Python Classes Repository -->
 
-        </div>
+      </div><!-- End Portfolio Container -->
 
-      </div>
+    </div>
+  </div>
 
-    </section><!-- /Portfolio Section -->
+</section><!-- End GitHub Repositories Section -->
+
+
 
      <!-- Contact Section -->
     <section id="contact" class="contact section">
